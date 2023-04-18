@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
 :root{
     --background-color: #0d1323;
     --background-claro: #1d204b;
@@ -42,4 +44,48 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 1.5em;
+}
+
+.profile{
+    background-color: var(--color-azul);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.profile img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 2em;
+}
+
+.texto{
+    font-size: .8em;
+    color: #cecece;
+}
+
+.nome{
+    font-size: 1.5em;
+    color: #fff;
+}
+ 
+.tempo{
+    padding: 1em 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tempo p.ativar{
+    color: rgba(255, 255, 255, 0.9);
+    margin: .5em 0;
+}
+
+.track-item{
+    background-color: #fff;
+    border-radius: 10px;
+    background-color: var(--background-claro);
+    color: #fff;
+    padding: 1em;
+    position: relative;
+    margin-top: 14px;
 }
