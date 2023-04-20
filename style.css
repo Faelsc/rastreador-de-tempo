@@ -89,3 +89,71 @@ body{
     position: relative;
     margin-top: 14px;
 }
+
+.track-item .nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-item .nav span:nth-child(2){
+    margin-top: -.3em;
+    font-weight: bolder;
+}
+
+.track-item .tempo{
+    font-size: 2em;
+    margin-top: .5em;
+}
+
+.track-item .anterior{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.track-item::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    transition: top .3s;
+}
+
+.track-item:hover::after{
+    top: -30px;
+}
+
+.track-item:nth-child(1)::after{
+    background-color: var(--color-laranja);
+}
+.track-item:nth-child(2)::after{
+    background-color: var(--color-azul-claro);
+}
+.track-item:nth-child(3)::after{
+    background-color: var(--color-vermelho);
+}
+.track-item:nth-child(4)::after{
+    background-color: var(--color-verde);
+}
+.track-item:nth-child(5)::after{
+    background-color: var(--color-roxo);
+}
+.track-item:nth-child(6)::after{
+    background-color: var(--color-amarelo);
+}
+
+
+@media(max-width: 680px) {
+    .container{
+        flex-direction: column;
+    }
+    .barra{
+        margin-bottom: 1.5em;
+    }
+    .tracks{
+        margin-left: 0;
+    }
+}
