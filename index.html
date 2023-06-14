@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 
@@ -15,27 +15,56 @@
   <section class="buscador-ativo">
 
     <section class="buscador-ativo__menu">
-      <div class="buscador-ativo__dono">
-        <img src="./images/image-jeremy.png" alt="" class="buscador-ativo__dono-img">
-        <div class="buscador-ativo__dono-container">
-          <p class="buscador-ativo__dono-for">Report for</p>
-          <h1 class="buscador-ativo__dono-nome">Jeremy Robson</h1>
+      <div class="buscador-ativo__perfil">
+        <img src="./images/image-jeremy.png" alt="" class="buscador-ativo__perfil-img">
+        <div class="buscador-ativo__perfil-container">
+          <p class="buscador-ativo__perfil-for">Report for</p>
+          <h1 class="buscador-ativo__perfil-nome">Jeremy Robson</h1>
         </div>
       </div>
       <div class="buscador-ativo__opcoes">
-        <button class="buscador-ativo__opcao" data-option="daily">
+        <button class="buscador-ativo__opcao" data-opcao="daily">
           Daily
         </button>
-        <button class="buscador-ativo__opcao" data-option="weekly">
+        <button class="buscador-ativo__opcao" data-opcao="weekly">
           Weekly
         </button>
-        <button class="buscador-ativo__opcao" data-option="monthly">
+        <button class="buscador-ativo__opcao" data-opcao="monthly">
           Monthly
         </button>
       </div>
     </section>
+    <section class="buscador-ativo__atividade work play study exercise">
+      <div class="atividade__bg">
+        <img src="./images/icon-work.svg" alt="">
+      </div>
+      <div class="atividade__info">
+        <header class="atividade__cabecalho">
+          <h2 class="atividade_nome">
+            work
+          </h2>
+          <div class="atividade__opcoes">
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+        </header>
+        <div class="atividade__tempo">
+          <h3 class="atividade__tempo-atual">
+            32hrs
+          </h3>
+          <div class="atividade__tempo-anterior">
+            <p class="janela-tempo">Last Week</p>
+            <p> - </p>
+            <p class="tempo">36hrs</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 </section>
 </body>
-
 </html>
